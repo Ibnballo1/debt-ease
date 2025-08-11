@@ -1,6 +1,6 @@
 import { Button } from "~/components/ui/button";
 
-const SignUpPage = () => {
+const AuthPage = () => {
   return (
     <div className="flex flex-col justify-center items-center flex-1/2 gap-2">
       <h1>Sign Up Page</h1>
@@ -10,4 +10,4 @@ const SignUpPage = () => {
   );
 };
 
-export default SignUpPage;
+export default AuthPage;
