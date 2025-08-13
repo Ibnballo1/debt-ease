@@ -1,8 +1,8 @@
 // import { GalleryVerticalEnd } from "lucide-react";
 
-// import { SignupForm } from "~/components/signup-form";
+// import { LoginForm } from "~/components/login-form";
 
-// export default function SignupPage() {
+// export default function LoginPage() {
 //   return (
 //     <div className="bg-muted flex-1/2 flex min-h-svh flex-col items-center justify-center gap-6 p-6 md:p-10">
 //       <div className="flex w-full max-w-sm flex-col gap-6">
@@ -12,33 +12,33 @@
 //           </div>
 //           DebtEase
 //         </a>
-//         <SignupForm />
+//         <LoginForm />
 //       </div>
 //     </div>
 //   );
 // }
 
 import Link from "next/link";
-import { SignupForm } from "~/components/signup-form";
+import { LoginForm } from "~/components/login-form";
 
-export default function SignupPage() {
+export default function LoginPage() {
   return (
     <div
       className="min-h-screen flex flex-1/2 items-center justify-center"
       style={{ backgroundColor: "#F5F5F5" }}
     >
       <div className="w-full max-w-md space-y-6 p-6">
-        <SignupForm />
+        <LoginForm />
 
         <div className="text-center">
           <p style={{ color: "#555555" }}>
-            Already have an account?{" "}
+            {"Don't have an account? "}
             <Link
-              href="/sign-in"
+              href="/sign-up"
               className="font-medium hover:underline"
               style={{ color: "#259672" }}
             >
-              Sign in
+              Sign up
             </Link>
           </p>
         </div>
