@@ -1,20 +1,26 @@
+import type React from "react";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "DebtEase",
-  description: "A platform for managing and reducing debt",
+  title: "DebtEase - Your Personal Debt Management Solution",
+  description:
+    "Take control of your debt with DebtEase. Track, manage, and eliminate your debts with powerful tools and insights.",
+  generator: "v0.dev",
 };
 
 export default function RootLayout({
@@ -23,12 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${inter.variable} ${poppins.variable} antialiased`}
+    >
+      <body>{children}</body>
     </html>
   );
 }

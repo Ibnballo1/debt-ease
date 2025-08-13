@@ -2,7 +2,7 @@
 // src/server/trpc/trpc.ts
 import { initTRPC, TRPCError } from "@trpc/server";
 import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
-import { db } from "~/db";
+import { db } from "~/lib/db";
 import { getAuth } from "~/lib/auth"; // BetterAuth utility
 
 /**
