@@ -92,7 +92,7 @@ export default function HomePage() {
             powerful tools and insights. Start your journey to financial freedom
             today.
           </p>
-          <Link href="/signup">
+          <Link href="/sign-up">
             <Button
               size="lg"
               className="bg-custom-primary hover:bg-custom-hover text-lg px-8 py-4 focus-ring transition-smooth"
@@ -174,7 +174,7 @@ export default function HomePage() {
             Join thousands of users who have successfully managed and eliminated
             their debt with DebtEase.
           </p>
-          <Link href="/signup">
+          <Link href="/sign-up">
             <Button
               size="lg"
               className="bg-custom-primary hover:bg-custom-hover text-lg px-8 py-4 focus-ring transition-smooth"

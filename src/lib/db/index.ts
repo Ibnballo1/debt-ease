@@ -18,7 +18,6 @@
 
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
-// Fixed import to use relative path without extension
 import * as schema from "./schema";
 
 if (!process.env.DATABASE_URL) {
@@ -29,5 +28,4 @@ if (!process.env.DATABASE_URL) {
 const client = postgres(process.env.DATABASE_URL);
 export const db = drizzle(client, { schema });
 
-// Fixed export to use relative path
 export * from "./schema";

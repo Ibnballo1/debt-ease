@@ -34,7 +34,7 @@ export default function LoginPage() {
           <p style={{ color: "#555555" }}>
             {"Don't have an account? "}
             <Link
-              href="/signup"
+              href="/sign-up"
               className="font-medium hover:underline"
               style={{ color: "#259672" }}
             >
